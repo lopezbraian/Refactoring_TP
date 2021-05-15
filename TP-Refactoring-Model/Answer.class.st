@@ -26,7 +26,7 @@ Answer >> description: anAnswer user: aUser question: aQuestion [
 { #category : #testing }
 Answer >> isTopAnswer [
 	.
-	^ self positiveVotes >=  ((question  sum: [:answer | answer positiveVotes size ]) / question answer size )
+	^ self positiveVotes >=  ((question  cantTotalVotosPosPregunta ) / question totalRespuestas  )
 ]
 
 { #category : #accessing }

@@ -40,7 +40,7 @@ QuestionRetriever >> initialize [
 { #category : #'as yet unclassified' }
 QuestionRetriever >> ordenarPorVotos: aCollection [
 
-^ aCollection asSortedCollection:[ :a :b | a positiveVotes size > b positiveVotes size ]
+^ aCollection asSortedCollection:[ :a :b | a cantVotosPositivos  > b cantVotosPositivos ]
 ]
 
 { #category : #retrieving }

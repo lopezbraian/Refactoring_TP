@@ -35,6 +35,17 @@ Question >> addTopic: aTopic [
 
 ]
 
+{ #category : #'as yet unclassified' }
+Question >> cantTotalVotosPosPorRespuesta [
+ answers sum: [:answer | answer positiveVotes size ]
+]
+
+{ #category : #'as yet unclassified' }
+Question >> cantVotosPositivos [
+
+^ self positiveVotes size
+]
+
 { #category : #initialization }
 Question >> initialize [
 	super initialize.
@@ -58,4 +69,10 @@ Question >> title: aTitle description: aDescription user: aUser [
 { #category : #accessing }
 Question >> topics [
 	^topics 
+]
+
+{ #category : #accessing }
+Question >> totalRespuestas [
+
+^ answers size.
 ]
